@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Calculadora del Cilindro de Oxígeno</string>
+
+    <string name="label">Calculadora O2</string>
+
+    <string name="action_settings">Ajustes</string>
+    <string-array name="sizes_array">
+        <item>D Tanque</item>
+        <item>E Tanque</item>
+        <item>G Tanque</item>
+        <item>H/K Tanque</item>
+        <item>M Tanque</item>
+    </string-array>
+
+    <string name="title">CALCULADORA DE LA CILINDRO DE OXÍGENO</string>
+    <string name="tank_size">Tamaño del tanque</string>
+    <string name="psi_field">psi</string>
+    <string name="rate_field">L/min</string>
+    <string name="calculate_button">Calcular</string>
+    <string name="reset_button">Reinicializar</string>
+    <string name="result_field">Min Restante</string>
+    <string name="blank_validation">Este campo no puede dejarse en blanco.</string>
+    <string name="psi_validation">Este campo se debe fijar a un nivel que sea mas alto que la presión residual segura de 200 psi.</string>
+    <string name="rate_validation">Este campo no se puede fijar en cero.</string>
+
+</resources>

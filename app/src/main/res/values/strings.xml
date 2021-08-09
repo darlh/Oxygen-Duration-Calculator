@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">O2 Cylinder Duration Calculator</string>
+
+    <string name="label">O2 Calculator</string>
+
+    <string name="action_settings">Settings</string>
+    <string-array name="sizes_array">
+        <item>D Tank</item>
+        <item>E Tank</item>
+        <item>G Tank</item>
+        <item>H/K Tank</item>
+        <item>M Tank</item>
+    </string-array>
+
+    <string name="title">OXYGEN CYLINDER DURATION CALCULATOR</string>
+    <string name="tank_size">Tank Size</string>
+    <string name="psi_field">psi</string>
+    <string name="rate_field">L/min</string>
+    <string name="calculate_button">Calculate</string>
+    <string name="reset_button">Reset</string>
+    <string name="result_field">Min Remaining</string>
+    <string name="blank_validation">This field cannot be left blank.</string>
+    <string name="psi_validation">This field must be above the safe residual pressure of 200 psi.</string>
+    <string name="rate_validation">This field cannot be set to zero.</string>
+
+</resources>

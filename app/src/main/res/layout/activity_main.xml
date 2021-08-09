@@ -1,0 +1,177 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OxygenCalculator"
+    android:weightSum="1"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="97dp"
+        android:text="@string/title"
+        android:id="@+id/title"
+        android:background="#ff01034d"
+        android:autoText="false"
+        android:textColor="#ff17da07"
+        android:textStyle="bold"
+        android:textSize="29dp"
+        android:padding="8dp"
+        android:gravity="center"
+        android:layout_weight=".2" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.1">
+
+        <Spinner
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/sizes_spinner"
+            android:spinnerMode="dropdown"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:background="@android:drawable/btn_dropdown" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.30"
+            android:text="@string/tank_size"
+            android:gravity="center_vertical|left"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"
+        android:weightSum="1">
+
+        <EditText
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="20"
+            android:id="@+id/psi"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:hint="eg. 1500"
+            android:gravity="right" />
+
+        <TextView
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:text="@string/psi_field"
+            android:gravity="center_vertical|left"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:textSize="18dp"
+            android:id="@+id/psiLabel"
+            android:layout_weight="0.33"
+            android:focusable="true"
+            android:focusableInTouchMode="true"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"
+        android:weightSum="1">
+
+        <EditText
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="20"
+            android:id="@+id/liters"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:hint="eg. 2"
+            android:gravity="right" />
+
+        <TextView
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:text="@string/rate_field"
+            android:gravity="center_vertical|left"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:textSize="18dp"
+            android:id="@+id/litersLabel"
+            android:layout_weight="0.41"
+            android:focusable="true"
+            android:focusableInTouchMode="true"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.15">
+
+        <Button
+            android:layout_width="176dp"
+            android:layout_height="wrap_content"
+            android:text="@string/calculate_button"
+            android:id="@+id/calculate_btn"
+            android:onClick="calculateOxygen"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/reset_button"
+            android:onClick="resetCalculator"
+            android:id="@+id/reset_btn"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:layout_weight="0.06" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="#ff01034d"
+        android:layout_weight="0.35">
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="35dp"
+
+            android:layout_gravity="center"
+            android:id="@+id/result"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:padding="4dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="10dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:text="@string/result_field"
+            android:textStyle="bold"
+            android:textColor="#ff17da07"
+            android:layout_weight=".5"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp" />
+    </LinearLayout>
+
+
+</LinearLayout>
