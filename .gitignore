@@ -77,6 +77,10 @@ fastlane/readme.md
 # Version control
 vcs.xml
 
+# OS generated files
+.DS_Store
+Thumbs.db
+
 # lint
 lint/intermediates/
 lint/generated/

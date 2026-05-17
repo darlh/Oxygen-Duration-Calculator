@@ -97,7 +97,7 @@ public class MainActivity extends Activity implements AdapterView.OnItemSelected
         }
         else if (TextUtils.isEmpty(strLiters)){
             litersLabel.requestFocus();
-            litersLabel.setError("This field cannot be left blank.");
+            litersLabel.setError(getResources().getString(R.string.blank_validation));
             return;
         }
         else{
@@ -106,12 +106,12 @@ public class MainActivity extends Activity implements AdapterView.OnItemSelected
             if (pressure<=200){
                 result.setText(String.valueOf(0));
                 psiLabel.requestFocus();
-                psiLabel.setError("This field must be above the safe residual pressure of 200 psi.");
+                psiLabel.setError(getResources().getString(R.string.psi_validation));
                 return;
             }
             else if (rate==0){
                 litersLabel.requestFocus();
-                litersLabel.setError("This field cannot be set to zero.");
+                litersLabel.setError(getResources().getString(R.string.rate_validation));
                 return;
             }
             else{
